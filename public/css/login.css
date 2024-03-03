@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+   
+  background: #f7f7f7;
+ 
+}
+
+
+.wrapper{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    height: 14cm;
+    margin-top: 2cm; 
+    margin-right: 3cm;           
+     
+  }
+  .form{
+    padding: 25px 30px;
+  }
+  .form h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    color: #333;
+  }
+
+  .form form{
+    margin: 20px 0;
+  }
+  /* .form form .name-details{
+    display: flex;
+  }
+  .form .name-details .field:first-child{
+    margin-right: 10px;
+  } */
+  .form .name-details .field:last-child{
+    margin-left: 10px;
+  }
+
+
+.form form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.form form .field label{
+    margin-bottom: 2px;
+  }
+  .form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form form .field input{
+    outline: none;
+  }
+
+  .form form .button input{
+    height: 45px;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    align-content: center;
+  }
+
+  .form form .field i{
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    color: #ccc;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .form form .field i.active::before{
+    color: #333;
+    content: "\f070";
+  }
+  .form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  .form .link a{
+    color: #333;
+  }
+  .form .link a:hover{
+    text-decoration: underline;
+  }
+
+
+
+.login-img-reg-container {
+    display: flex;
+}
+
+#registration-section {
+    padding: 14px;
+    margin-right: 14px;
+    width: 300px;
+    flex: 0 0 300px;
+    
+}
+
+#left-asset-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+    padding: 0px 60px;
+}
+
+#login-image-preview {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#login-left-text {
+    font-size: 19px;
+    text-align: center;
+    margin: 0 0 18px 0;
+}
+
+/* Responsive for android */
+@media  screen and (max-width:480px) {
+	body{
+		max-width: 480px;
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+  .wrapper{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    height: 14cm;
+    margin-top: 2cm; 
+    margin-right: 3cm;  
+    margin-left: -1.5cm;         
+     
+  }
+}
+
+
+/* 
+responsive for idpad */
+@media screen and (min-device-width:640px) and (max-device-width:1024px) and (orientation:portrait) {
+  .wrapper{
+    margin-right: 5cm;  
+    margin-left: -7cm; 
+  }
+}
+

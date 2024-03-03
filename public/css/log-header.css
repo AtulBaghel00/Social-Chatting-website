@@ -1,0 +1,65 @@
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.wide-logo {
+    display: flex;
+    width: 220px;
+    margin-left: 20px;
+    height: 90px
+}
+
+#menu-login-credentials-container {
+    display: flex;
+    margin-left: 15cm;
+}
+
+#keep-me-connected {
+    margin: 0 3px 0 0;
+}
+
+#connect {
+    cursor: pointer;
+}
+
+.text-input medium-text-input{
+    width: 20cm;
+}
+
+/* responsive */
+
+@media  screen and (max-width:480px) {
+	body{
+		max-width: 480px;
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+    header{
+		 
+		max-width: 480px;
+		width: 12.3cm;
+		height: 3cm;
+		overflow-x: hidden;
+		
+	}
+
+    #menu-login-credentials-container {
+        display: flex;
+        margin-left: -6.5cm;
+    }
+}
+
+@media  screen and (min-device-width:640px) and (max-device-width:1024px) and (orientation:portrait) {
+    body{
+		max-width: 1262px;
+		width: 100%;
+		overflow-x: hidden;
+	}
+    header{
+        width: 1262px;
+    }
+}
